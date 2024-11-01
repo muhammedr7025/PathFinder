@@ -90,8 +90,8 @@
   
   .qn-option:hover:not([disabled]) {
     background-color: #4f4883;
-    transform: scale(1.1);
-    transition: 0.4s ease;
+    /* transform: scale(1.1);
+    transition: 0.4s ease; */
   }
   
   .qn-option:disabled {
