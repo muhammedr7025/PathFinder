@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/attemp_quiz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathway Identification Questionnaire</title>
+  </head>
+  <body>
+    <!-- Quiz Container for Intro, Quiz, and Result Sections -->
+    <div class="container">
+      <h1>Pathway Identification Questionnaire</h1>
+      <div class="quiz-container" id="quiz-container">
+        <!-- Introduction Content (Initially Visible) -->
+        <div id="intro-content">
+          <h2>Welcome to the Pathway Identification Questionnaire!</h2>
+          <p>
+            This quiz is designed to help you discover the domains or pathways that align with your interests. If you're unsure or struggling to find a path that resonates with you, this questionnaire will guide you towards the areas that may best suit your preferences and aspirations.
+          </p>
+          <button id="start-btn" class="qn-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Content (Initially Hidden) -->
+        <div id="quiz-content" style="display: none;">
+          <div class="qn-section">
+            <h3 id="qn-section"></h3>
+          </div>
+          <div class="option-container" id="answer-buttons"></div>
+          <div class="qn-footer">
+            <div id="balance-qn" class="balance-qn"></div>
+            <button id="qn-btn" class="qn-btn">Next</button>
+          </div>
+        </div>
+
+        <!-- Result Content (Initially Hidden) -->
+        <div id="result-content" style="display: none;">
+          <h2>Your Interest Pathway</h2>
+          <p id="result-message"></p>
+          <button onclick="location.reload()" class="qn-btn">Retake Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Done By 💙
+        <a href="muhammedr.me"
+          >Muhammed R
+        </a>
+      </p>
+    </footer>
+    <script src="./JS/attempt_quiz.js"></script>
+  </body>
+</html>

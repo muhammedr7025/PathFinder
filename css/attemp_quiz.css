@@ -1,0 +1,162 @@
+/* Base styling */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #03001c;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  color: aqua;
+}
+
+footer {
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Intro and Quiz Container */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  background-color: #1b1740;
+  border-radius: 25px;
+  border: 2px solid #211d47;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Intro content styling */
+#intro-content h2 {
+  font-size: 1.8rem;
+  color: #a0c4ff;
+  margin-bottom: 10px;
+}
+
+#intro-content p {
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Quiz content styling */
+.qn-section {
+  color: white;
+  padding: 10px;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-container .qn-option {
+  padding: 10px;
+  background-color: #373167;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+.qn-option:hover:not([disabled]) {
+  background-color: #4f4883;
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.qn-option:disabled {
+  cursor: no-drop;
+}
+
+.qn-option.selected {
+  background-color: #6a5acd;
+  color: white;
+}
+
+/* Next button styling */
+.qn-btn {
+  padding: 10px 30px;
+  background-color: #373167;
+  text-align: center;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.qn-btn:hover {
+  background-color: #4f4882;
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.qn-footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+}
+
+.qn-footer .balance-qn {
+  color: white;
+  font-weight: bold;
+}
+
+/* Result content styling */
+#result-content {
+  background-color: #292d50;
+  color: #e0e0f1; /* Light color for text */
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #373167;
+  margin-top: 15px;
+}
+
+#result-content h2 {
+  font-size: 2rem;
+  color: #9ac6ff;
+  margin-bottom: 10px;
+}
+
+#result-content p {
+  font-size: 1.2rem;
+  color: #d3d3e3;
+  line-height: 1.6;
+}
+
+#result-content .qn-btn {
+  background-color: #4a3b7d;
+}
+
+#result-content .qn-btn:hover {
+  background-color: #62548f;
+}
