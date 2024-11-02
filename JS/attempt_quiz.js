@@ -198,10 +198,10 @@ function showResult() {
     // List all fields with scores of 1 or higher as interests
     let resultFields = [];
 
-    if (scores.A >= 3) resultFields.push("Maker");
-    if (scores.B >= 3) resultFields.push("Coder");
-    if (scores.C >= 3) resultFields.push("Designer");
-    if (scores.D >= 3) resultFields.push("Managment");
+    if (scores.A >= 2) resultFields.push("Maker");
+    if (scores.B >= 2) resultFields.push("Coder");
+    if (scores.C >= 2) resultFields.push("Designer");
+    if (scores.D >= 2) resultFields.push("Managment");
 
     // Display result message based on identified interests
     resultMessage.innerHTML = `Your interests span the following pathways: ${resultFields.join(", ")}. ${
