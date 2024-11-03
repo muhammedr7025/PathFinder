@@ -204,7 +204,7 @@ function showResult() {
     if (scores.D >= 2) resultFields.push("Managment");
 
     // Display result message based on identified interests
-    resultMessage.innerHTML = `Your interests span the following pathways: ${resultFields.join(", ")}. ${
+    resultMessage.innerHTML = `Your interests span the following pathways:<h1><b> ${resultFields.join(", ")}.</b></h1> ${
       resultFields.length > 1
         ? "You have a versatile set of interests!"
         : `You are primarily interested in ${resultFields[0]} activities.`
